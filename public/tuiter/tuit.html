@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuit</title>
+</head>
+
+<body>
+  <!-- A screen for posting new tuits. -->
+
+  <!-- Back link to navigation page -->
+  <a href="navigation.html">Back</a>
+
+  <!-- h1 Tuiter header -->
+  <h1>Tuiter</h1>
+
+  <!-- h2 Tuit header -->
+  <h2>Tuit</h2>
+
+  <!-- 48x48 Image representing the owner of the account -->
+  <img src="images/user.jpg" width="48px" height="48px" />
+  <br>
+
+  <!-- Textarea element for users to post new tuits -->
+  <textarea placeholder="What's happening?"></textarea>
+  <br>
+
+  <!-- Dropdown for Everyone/Following/Mentioned (Default = Everyone) -->
+  <select id="select-one-genre">
+    <option selected value="EVERYONE">Everyone can reply</option>
+    <option value="FOLLOWING">People you follow</option>
+    <option value="MENTIONED">Only people you mention</option>
+  </select>
+
+  <hr>
+
+  <!-- Button to upload image -->
+  <input type="file" />
+
+  <!-- Button to create a new tuit -->
+  <button type="button">Tuit</button>
+
+  <hr>
+
+</body>
+
+</html>
