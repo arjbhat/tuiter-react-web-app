@@ -8,123 +8,176 @@
 </head>
 
 <body>
-  <!-- Home screen for users to view tuit posts and create new posts. -->
+  <table width="100%">
+    <tbody>
+      <tr valign="top">
+        <td>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="notifications.html">Notifications</a></li>
+            <li><a href="messages.html">Messages</a></li>
+            <li><a href="bookmarks.html">Bookmarks</a></li>
+            <li><a href="lists.html">Lists</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="tuit.html">Tuit</a></li>
+            <li><a href="reply.html">Reply</a></li>
+          </ul>
+        </td>
+        <td width="100%">
+          <!-- Home screen for users to view tuit posts and create new posts. -->
 
-  <!-- Back link to navigation page -->
-  <a href="navigation.html">Back</a>
+          <!-- Back link to navigation page -->
+          <a href="navigation.html">Back</a>
 
-  <!-- h1 Tuiter header -->
-  <h1>Tuiter</h1>
+          <!-- h1 Tuiter header -->
+          <h1>Tuiter</h1>
 
-  <!-- h2 Home header -->
-  <h2>Home</h2>
+          <!-- h2 Home header -->
+          <h2>Home</h2>
 
-  <!-- 48x48 Image representing the owner of the account -->
-  <img src="images/user.jpg" width="48px" height="48px" />
-  <br>
+          <!-- 48x48 Image representing the owner of the account -->
+          <img src="images/user.jpg" width="48px" height="48px" />
+          <br>
 
-  <!-- Textarea element for users to post new tuits -->
-  <textarea placeholder="What's happening?"></textarea>
-  <br>
+          <!-- Textarea element for users to post new tuits -->
+          <textarea placeholder="What's happening?"></textarea>
+          <br>
 
-  <!-- Dropdown for Everyone/Following/Mentioned (Default = Everyone) -->
-  <select id="select-one-genre">
-    <option selected value="EVERYONE">Everyone can reply</option>
-    <option value="FOLLOWING">People you follow</option>
-    <option value="MENTIONED">Only people you mention</option>
-  </select>
+          <!-- Dropdown for Everyone/Following/Mentioned (Default = Everyone) -->
+          <select id="select-one-genre">
+            <option selected value="EVERYONE">Everyone can reply</option>
+            <option value="FOLLOWING">People you follow</option>
+            <option value="MENTIONED">Only people you mention</option>
+          </select>
 
-  <hr>
+          <hr>
 
-  <!-- Button to upload image -->
-  <input type="file" />
+          <!-- Button to upload image -->
+          <input type="file" />
 
-  <!-- Button to create a new tuit -->
-  <button type="button">Tuit</button>
+          <!-- Button to create a new tuit -->
+          <button type="button">Tuit</button>
 
-  <hr>
+          <hr>
 
-  <!-- Couple of tuits -->
-  <ul>
-    <!-- Tweet 1 (Arjun) -->
-    <li>
-      <!-- Hyperlink referencing topic.html labeled Topic 123 -->
-      <a href="topic.html">Topic 123</a>
-      <br>
-      <!-- 48x48 Image -->
-      <img src="images/duck.jpg" width="48px" height="48px" />
-      <!-- A link referencing profile.html labeled Arjun -->
-      <a href="profile.html">Arjun</a>
-      <!-- Handle for Arjun with time stamp -->
-      <text>@arjun - 2h</text>
-      <!-- Paragraph with dummy content -->
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Duis et orci feugiat nisi fringilla mattis at et quam.
-        Mauris nec turpis eget nunc dignissim elementum.
-        Nunc dignissim purus in risus pretium gravida.
-        Nulla facilisi. Duis laoreet, mauris sit amet ultricies laoreet, lacus ligula faucibus diam, id fringilla
-        ligula lacus vel quam.
-        Fusce id turpis ac risus pharetra imperdiet.
-      </p>
-      <!-- Reply -->
-      <a href="reply.html">Reply</a>
-      <text>123</text>
-      <text>|</text>
-      <!-- Retuit -->
-      <a href="retuit.html">Retuit</a>
-      <text>234</text>
-      <text>|</text>
-      <!-- Like -->
-      <a href="like.html">Like</a>
-      <text>345</text>
-      <text>|</text>
-      <!-- Share -->
-      <a href="share.html">Share</a>
-    </li>
+          <!-- Couple of tuits -->
+          <ul>
+            <!-- Tweet 1 (Arjun) -->
+            <li>
+              <!-- Hyperlink referencing topic.html labeled Topic 123 -->
+              <a href="topic.html">Topic 123</a>
+              <br>
+              <!-- 48x48 Image -->
+              <img src="images/duck.jpg" width="48px" height="48px" />
+              <!-- A link referencing profile.html labeled Arjun -->
+              <a href="profile.html">Arjun</a>
+              <!-- Handle for Arjun with time stamp -->
+              <text>@arjun - 2h</text>
+              <!-- Paragraph with dummy content -->
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et orci feugiat nisi fringilla mattis at
+                et quam. Mauris nec turpis eget nunc dignissim elementum. Nunc dignissim purus in risus pretium gravida.
+                Nulla facilisi. Duis laoreet, mauris sit amet ultricies laoreet, lacus ligula faucibus diam, id
+                fringilla ligula lacus vel quam. Fusce id turpis acrisus pharetra imperdiet.
+              </p>
+              <!-- Reply -->
+              <a href="reply.html">Reply</a>
+              <text>123</text>
+              <text>|</text>
+              <!-- Retuit -->
+              <a href="retuit.html">Retuit</a>
+              <text>234</text>
+              <text>|</text>
+              <!-- Like -->
+              <a href="like.html">Like</a>
+              <text>345</text>
+              <text>|</text>
+              <!-- Share -->
+              <a href="share.html">Share</a>
+            </li>
 
-    <br>
+            <br>
 
-    <!-- Tweet 2 (Alexander) -->
-    <li>
-      <!-- Hyperlink referencing topic.html labeled Topic 234 -->
-      <a href="topic.html">Topic 234</a>
-      <br>
-      <!-- 48x48 Image -->
-      <img src="images/monkey.jpg" width="48px" height="48px" />
-      <!-- A link referencing profile.html labeled Alexander -->
-      <a href="profile.html">Alexander</a>
-      <!-- Handle for Alexander with time stamp -->
-      <text>@alexander - 4h</text>
-      <!-- Paragraph with dummy content -->
-      <p>
-        Aliquam malesuada orci id dui dictum, sed eleifend augue gravida.
-        Aenean sodales fermentum nulla, dapibus finibus sapien ultrices vel.
-        Suspendisse nisl tortor, faucibus eu convallis sed, sodales et orci.
-        Nunc sit amet ullamcorper libero. Quisque gravida nisi dolor, sed rhoncus mauris suscipit et.
-        Nulla ultrices mauris hendrerit faucibus efficitur.
-        Donec posuere dolor in neque sollicitudin, in scelerisque lectus ornare.
-        Aenean bibendum ligula vel lacus tincidunt tincidunt.
-        Ut pellentesque leo eu nisi scelerisque, ut pellentesque ante fermentum.
-      </p>
-      <!-- Reply -->
-      <a href="reply.html">Reply</a>
-      <text>987</text>
-      <text>|</text>
-      <!-- Retuit -->
-      <a href="retuit.html">Retuit</a>
-      <text>876</text>
-      <text>|</text>
-      <!-- Like -->
-      <a href="like.html">Like</a>
-      <text>765</text>
-      <text>|</text>
-      <!-- Share -->
-      <a href="share.html">Share</a>
-    </li>
+            <!-- Tweet 2 (Alexander) -->
+            <li>
+              <!-- Hyperlink referencing topic.html labeled Topic 234 -->
+              <a href="topic.html">Topic 234</a>
+              <br>
+              <!-- 48x48 Image -->
+              <img src="images/monkey.jpg" width="48px" height="48px" />
+              <!-- A link referencing profile.html labeled Alexander -->
+              <a href="profile.html">Alexander</a>
+              <!-- Handle for Alexander with time stamp -->
+              <text>@alexander - 4h</text>
+              <!-- Paragraph with dummy content -->
+              <p>
+                Aliquam malesuada orci id dui dictum, sed eleifend augue gravida. Aenean sodales fermentum nulla,
+                dapibus finibus sapien ultrices vel. Suspendisse nisl tortor, faucibus eu convallis sed, sodales et
+                orci. Nunc sit amet ullamcorper libero. Quisque gravida nisi dolor, sed rhoncus mauris suscipit et.
+                Nulla ultrices mauris hendrerit faucibus efficitur. Donec posuere dolor in neque sollicitudin, in
+                scelerisque lectus ornare. Aenean bibendum ligula vel lacus tincidunt tincidunt.Ut pellentesque leo eu
+                nisi scelerisque, ut pellentesque ante fermentum.
+              </p>
+              <!-- Reply -->
+              <a href="reply.html">Reply</a>
+              <text>987</text>
+              <text>|</text>
+              <!-- Retuit -->
+              <a href="retuit.html">Retuit</a>
+              <text>876</text>
+              <text>|</text>
+              <!-- Like -->
+              <a href="like.html">Like</a>
+              <text>765</text>
+              <text>|</text>
+              <!-- Share -->
+              <a href="share.html">Share</a>
+            </li>
 
-    <!-- TODO: Create a third tuit that includes a video as described in the book in section 2.7 Embedding Videos In HTML Documents (2.5pts) -->
-  </ul>
+            <!-- TODO: Create a third tuit that includes a video as described in the book in section 2.7 Embedding Videos In HTML Documents (2.5pts) -->
+            <li>
+              <!-- Hyperlink referencing topic.html labeled Topic 234 -->
+              <a href="topic.html">Topic 345</a>
+              <br>
+              <!-- 48x48 Image -->
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png"
+                width="48px" height="48px" />
+              <!-- A link referencing profile.html labeled Alexander -->
+              <a href="profile.html">NASA</a>
+              <!-- Handle for Alexander with time stamp -->
+              <text>@NASA - 8h</text>
+              <!-- Paragraph with dummy content -->
+              <p>
+                From orbit: Launch was awesome!!
+                I am feeling great, working hard, & enjoying the magnificent views, the adventure of a lifetime has
+                begun!<br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/21X5lGlDOfg"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </p>
+              <!-- Reply -->
+              <a href="reply.html">Reply</a>
+              <text>1011</text>
+              <text>|</text>
+              <!-- Retuit -->
+              <a href="retuit.html">Retuit</a>
+              <text>1213</text>
+              <text>|</text>
+              <!-- Like -->
+              <a href="like.html">Like</a>
+              <text>1415</text>
+              <text>|</text>
+              <!-- Share -->
+              <a href="share.html">Share</a>
+            </li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </body>
 
 </html>

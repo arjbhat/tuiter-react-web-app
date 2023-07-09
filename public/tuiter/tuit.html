@@ -8,42 +8,61 @@
 </head>
 
 <body>
-  <!-- A screen for posting new tuits. -->
+  <table width="100%">
+    <tbody>
+      <tr valign="top">
+        <td>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="notifications.html">Notifications</a></li>
+            <li><a href="messages.html">Messages</a></li>
+            <li><a href="bookmarks.html">Bookmarks</a></li>
+            <li><a href="lists.html">Lists</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="tuit.html">Tuit</a></li>
+            <li><a href="reply.html">Reply</a></li>
+          </ul>
+        </td>
+        <td width="100%">
+          <!-- A screen for posting new tuits. -->
 
-  <!-- Back link to navigation page -->
-  <a href="navigation.html">Back</a>
+          <!-- Back link to navigation page -->
+          <a href="navigation.html">Back</a>
 
-  <!-- h1 Tuiter header -->
-  <h1>Tuiter</h1>
+          <!-- h1 Tuiter header -->
+          <h1>Tuiter</h1>
 
-  <!-- h2 Tuit header -->
-  <h2>Tuit</h2>
+          <!-- h2 Tuit header -->
+          <h2>Tuit</h2>
 
-  <!-- 48x48 Image representing the owner of the account -->
-  <img src="images/user.jpg" width="48px" height="48px" />
-  <br>
+          <!-- 48x48 Image representing the owner of the account -->
+          <img src="images/user.jpg" width="48px" height="48px" />
+          <br>
 
-  <!-- Textarea element for users to post new tuits -->
-  <textarea placeholder="What's happening?"></textarea>
-  <br>
+          <!-- Textarea element for users to post new tuits -->
+          <textarea placeholder="What's happening?"></textarea>
+          <br>
 
-  <!-- Dropdown for Everyone/Following/Mentioned (Default = Everyone) -->
-  <select id="select-one-genre">
-    <option selected value="EVERYONE">Everyone can reply</option>
-    <option value="FOLLOWING">People you follow</option>
-    <option value="MENTIONED">Only people you mention</option>
-  </select>
+          <!-- Dropdown for Everyone/Following/Mentioned (Default = Everyone) -->
+          <select id="select-one-genre">
+            <option selected value="EVERYONE">Everyone can reply</option>
+            <option value="FOLLOWING">People you follow</option>
+            <option value="MENTIONED">Only people you mention</option>
+          </select>
 
-  <hr>
+          <hr>
 
-  <!-- Button to upload image -->
-  <input type="file" />
+          <!-- Button to upload image -->
+          <input type="file" />
 
-  <!-- Button to create a new tuit -->
-  <button type="button">Tuit</button>
+          <!-- Button to create a new tuit -->
+          <button type="button">Tuit</button>
 
-  <hr>
-
+          <hr>
+        </td>
+      </tr>
+  </table>
 </body>
 
 </html>
