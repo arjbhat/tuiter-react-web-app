@@ -92,6 +92,14 @@
   left: 20px;
 }
 
+.wd-image-title-2 {
+  position: absolute;
+  font-weight: bold;
+  color: white;
+  bottom: 0px;
+  left: 8px;
+}
+
 .wd-event-listings {
   position: relative;
   list-style-type: none;
