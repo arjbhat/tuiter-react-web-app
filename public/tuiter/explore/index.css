@@ -131,3 +131,10 @@
 .wd-color-gray {
   color: gray;
 }
+
+.wd-image-border {
+  border: solid;
+  border-width: 1px;
+  border-top: none;
+  border-color: rgb(239, 243, 244);
+}
