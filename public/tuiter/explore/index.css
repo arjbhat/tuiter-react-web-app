@@ -1,0 +1,125 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wd-borders {
+  border: solid;
+  border-width: 1px;
+  border-color: rgb(239, 243, 244);
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.wd-search-box {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.wd-search-input {
+  width: 90%;
+  border-width: 0px;
+  border-radius: 100px;
+  background-color: rgb(239, 243, 244);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 40px;
+  padding-right: 0px;
+}
+
+.wd-search-icon {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  color: darkslategray;
+}
+
+.wd-cog-icon {
+  padding-left: 50px;
+  color: darkslategray;
+}
+
+.wd-nav-bar-group {
+  position: relative;
+}
+
+.wd-nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.wd-nav-links {
+  text-decoration: none;
+  color: darkslategray;
+}
+
+.wd-nav-link-selected {
+  color: black;
+}
+
+.wd-nav-link-selected-underline {
+  position: absolute;
+  height: 4px;
+  width: 55px;
+  border-radius: 50px;
+  background-color: rgb(71, 155, 233);
+  top: 30px;
+  left: 10px;
+}
+
+.wd-image-group {
+  position: relative;
+}
+
+.wd-image-tag {
+  position: absolute;
+  color: white;
+  bottom: 30px;
+  left: 20px;
+  font-weight: normal;
+}
+
+.wd-image-title {
+  position: absolute;
+  font-weight: bold;
+  color: white;
+  bottom: 0px;
+  left: 20px;
+}
+
+.wd-event-listings {
+  position: relative;
+  list-style-type: none;
+  border-style: solid;
+  margin: 0;
+}
+
+.wd-event-listing {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 0px;
+  padding-bottom: 30px;
+}
+
+.wd-event-list-font {
+  font-size: 14px;
+  color: gray;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.wd-event-list-font-header {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.wd-color-gray {
+  color: gray;
+}

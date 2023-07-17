@@ -1,0 +1,122 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wd-username {
+  font-weight: bold;
+}
+
+.wd-gray-text {
+  color: gray
+}
+
+.wd-avatar {
+  width: 40px;
+  padding-right: 12px;
+}
+
+.wd-rounded-image {
+  border-radius: 50%;
+}
+
+.wd-tuit-header {
+  display: flex;
+  align-items: top;
+}
+
+.wd-ellipsis-black {
+  margin-left: auto;
+  margin-right: 17px;
+}
+
+.wd-ellipsis {
+  margin-left: auto;
+  color: gray;
+}
+
+.wd-user-info {
+  margin-top: 0px;
+}
+
+.wd-bookmarks {
+  list-style-type: none;
+  border: solid;
+  border-color: lightgray;
+  border-width: 1px;
+  padding-left: 0px;
+}
+
+.wd-bookmark {
+  display: flex;
+  flex-direction: column;
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+.wd-post {
+  border-radius: 20px;
+  border: solid;
+  border-color: lightgray;
+  border-width: 1px;
+  overflow: hidden;
+  margin-left: 52px;
+}
+
+.wd-post-image {
+  max-height: 100%;
+  width: 100%;
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: lightgray;
+}
+
+.wd-post-text {
+  margin-top: 0px;
+  padding-top: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 0px;
+  max-width: inherit;
+}
+
+.wd-tuit-stats {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 52px;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  color: gray;
+}
+
+.wd-page-header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.wd-bookmarks-title {
+  margin-left: 22px;
+}
+
+.wd-arrow-left {
+  margin-left: 18px;
+  color: black;
+}
+
+.wd-bottom-divider {
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  margin-bottom: 12px;
+}
+
+.wd-blue-text {
+  color: rgb(29, 161, 242);
+  text-decoration: none;
+}
+
+.wd-selected-icon {
+  color: rgb(229, 59, 127);
+}
