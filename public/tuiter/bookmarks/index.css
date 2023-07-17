@@ -49,8 +49,10 @@
 .wd-bookmark {
   display: flex;
   flex-direction: column;
-  margin-right: 12px;
-  margin-left: 12px;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-bottom: 12px;
 }
 
 .wd-post {
