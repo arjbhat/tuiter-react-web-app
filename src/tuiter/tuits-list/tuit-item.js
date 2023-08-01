@@ -9,8 +9,8 @@ const TuitItem = (
   { tuit = {} }
 ) => {
   const dispatch = useDispatch();
-  const tuitLikeHandler = () => {
-    dispatch(likeTuit(tuit._id));
+  const tuitLikeHandler = (id) => {
+    dispatch(likeTuit(id));
   }
   const deleteTuitHandler = (id) => {
     dispatch(deleteTuit(id));
@@ -30,7 +30,7 @@ const TuitItem = (
           <div className="d-flex flex-row justify-content-between pt-2">
             <button className="btn p-0"><FaComment /> {tuit.replies}</button>
             <button className="btn p-0"><FaRetweet /> {tuit.retuits}</button>
-            <button className="btn p-0" onClick={tuitLikeHandler}> <FaHeart className={`${heartColor}`} /> {tuit.likes}</button>
+            <button className="btn p-0" onClick={() => tuitLikeHandler(tuit._id)}> <FaHeart className={`${heartColor}`} /> {tuit.likes}</button>
             <button className="btn p-0"><FaArrowUpFromBracket /></button>
             <div></div>
           </div>
