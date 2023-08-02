@@ -27,11 +27,11 @@ const TuitItem = (
             onClick={() => deleteTuitHandler(tuit._id)} />
           <div><b>{tuit.userName}</b> <FaCheckCircle className="text-primary" /> {tuit.handle} &middot; {tuit.time}</div>
           <div>{tuit.tuit}</div>
-          <div className="d-flex flex-row justify-content-between pt-2">
-            <button className="btn p-0"><FaComment /> {tuit.replies}</button>
-            <button className="btn p-0"><FaRetweet /> {tuit.retuits}</button>
-            <button className="btn p-0" onClick={() => tuitLikeHandler(tuit._id)}> <FaHeart className={`${heartColor}`} /> {tuit.likes}</button>
-            <button className="btn p-0"><FaArrowUpFromBracket /></button>
+          <div className="pt-2 row">
+            <div className="p-0 col-3"><FaComment /> {tuit.replies}</div>
+            <div className="p-0 col-3"><FaRetweet /> {tuit.retuits}</div>
+            <div className="p-0 col-3" onClick={() => tuitLikeHandler(tuit._id)}> <FaHeart className={`${heartColor}`} /> {tuit.likes}</div>
+            <div className="p-0 col-3"><FaArrowUpFromBracket /></div>
             <div></div>
           </div>
         </div>
