@@ -8,12 +8,30 @@ import { TbCalendarStats } from "react-icons/tb";
 import { createTuitThunk } from "./services/tuits-thunks";
 import { useDispatch } from "react-redux";
 
+const currentUser = {
+  "userName": "NASA",
+  "handle": "@nasa",
+  "image": "../tuiter/images/nasa.jpg",
+};
+
+const templateTuit = {
+  ...currentUser,
+  "topic": "Space",
+  "time": "2h",
+  "liked": false,
+  "replies": 0,
+  "retuits": 0,
+  "likes": 0,
+}
+
 const WhatsHappening = () => {
   let [whatsHappening, setWhatsHappening] = useState('');
   const dispatch = useDispatch();
   const tuitClickHandler = () => {
     const newTuit = {
-      tuit: whatsHappening
+      ...templateTuit,
+      tuit: whatsHappening,
+      _id: (new Date()).getTime()
     }
     dispatch(createTuitThunk(newTuit));
     setWhatsHappening("");
