@@ -4,16 +4,21 @@ import { FaCheckCircle, FaComment, FaRetweet, FaHeart, FaInbox } from "react-ico
 import { FaArrowUpFromBracket } from "react-icons/fa6";
 import { likeTuit, deleteTuit } from "../reducers/tuits-reducer";
 import { AiOutlineClose } from "react-icons/ai";
+import { deleteTuitThunk, updateTuitThunk } from "../services/tuits-thunks";
 
 const TuitItem = (
   { tuit = {} }
 ) => {
   const dispatch = useDispatch();
-  const tuitLikeHandler = (id) => {
-    dispatch(likeTuit(id));
+  const tuitLikeHandler = () => {
+    dispatch(updateTuitThunk({
+      ...tuit,
+      liked: !tuit.liked,
+      likes: tuit.liked ? tuit.likes - 1 : tuit.likes + 1
+    }));
   }
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
   }
   const heartColor = tuit.liked ? "text-danger" : "";
   return (
