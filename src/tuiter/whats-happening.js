@@ -19,9 +19,11 @@ const templateTuit = {
   "topic": "Space",
   "time": "2h",
   "liked": false,
+  "disliked": false,
   "replies": 0,
   "retuits": 0,
   "likes": 0,
+  "dislikes": 0
 }
 
 const WhatsHappening = () => {

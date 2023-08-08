@@ -1,9 +1,9 @@
 import React from "react";
 import { useDispatch } from 'react-redux'
-import { FaCheckCircle, FaComment, FaRetweet, FaHeart, FaInbox } from "react-icons/fa";
+import { FaCheckCircle, FaComment, FaRetweet, FaInbox } from "react-icons/fa";
 import { FaArrowUpFromBracket } from "react-icons/fa6";
 import { likeTuit, deleteTuit } from "../reducers/tuits-reducer";
-import { AiOutlineClose } from "react-icons/ai";
+import { AiOutlineClose, AiOutlineDislike, AiFillDislike, AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import { deleteTuitThunk, updateTuitThunk } from "../services/tuits-thunks";
 
 const TuitItem = (
@@ -17,10 +17,16 @@ const TuitItem = (
       likes: tuit.liked ? tuit.likes - 1 : tuit.likes + 1
     }));
   }
+  const tuitDislikeHandler = () => {
+    dispatch(updateTuitThunk({
+      ...tuit,
+      disliked: !tuit.disliked,
+      dislikes: tuit.disliked ? tuit.dislikes - 1 : tuit.dislikes + 1
+    }));
+  }
   const deleteTuitHandler = (id) => {
     dispatch(deleteTuitThunk(id));
   }
-  const heartColor = tuit.liked ? "text-danger" : "";
   return (
     <li className="list-group-item">
       <div className="row">
@@ -33,11 +39,19 @@ const TuitItem = (
           <div><b>{tuit.userName}</b> <FaCheckCircle className="text-primary" /> {tuit.handle} &middot; {tuit.time}</div>
           <div>{tuit.tuit}</div>
           <div className="pt-2 row">
-            <div className="p-0 col-3"><FaComment /> {tuit.replies}</div>
-            <div className="p-0 col-3"><FaRetweet /> {tuit.retuits}</div>
-            <div className="p-0 col-3" onClick={() => tuitLikeHandler(tuit._id)}> <FaHeart className={`${heartColor}`} /> {tuit.likes}</div>
-            <div className="p-0 col-3"><FaArrowUpFromBracket /></div>
-            <div></div>
+            <div className="p-0 col-2"><FaComment /> {tuit.replies}</div>
+            <div className="p-0 col-2"><FaRetweet /> {tuit.retuits}</div>
+            <div className="p-0 col-2" onClick={() => tuitLikeHandler(tuit._id)}>
+              {
+                tuit.liked ? <AiFillHeart className="text-danger" /> : <AiOutlineHeart />
+              }
+              {tuit.likes}</div>
+            <div className="p-0 col-2" onClick={() => tuitDislikeHandler(tuit._id)}>
+              {
+                tuit.disliked ? <AiFillDislike /> : <AiOutlineDislike />
+              }
+              {tuit.dislikes}</div>
+            <div className="p-0 col-2"><FaArrowUpFromBracket /></div>
           </div>
         </div>
       </div>
