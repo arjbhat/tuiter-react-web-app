@@ -54,11 +54,7 @@ const tuitsSlice = createSlice({
       tuit.liked ? tuit.likes++ : tuit.likes--;
     },
     createTuit(state, action) {
-      state.tuits.unshift({
-        ...action.payload,
-        ...templateTuit,
-        _id: (new Date()).getTime(),
-      })
+      state.tuits.unshift(action.payload)
     },
     deleteTuit(state, action) {
       const index = state.tuits
